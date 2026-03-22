@@ -1,6 +1,6 @@
 # Hey, I'm Tave 👋
 
-I'm a **BASc Engineering student at UBC** (Vancouver, BC) with a passion for building things — both in code and in the real world.
+I'm a **Engineering student at UBC** (Vancouver, BC) with a passion for building things — both in code and in the real world.
 
 I write full-stack web apps, work with microcontrollers and CAD, and I'm actively looking for **Summer 2026 co-op / internship** opportunities in software or engineering.
 
