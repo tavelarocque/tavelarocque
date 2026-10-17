@@ -1,8 +1,8 @@
 # Hey, I'm Tave 👋
 
-I'm an **Engineering student at UBC** (Vancouver, BC) building things at the intersection of full-stack web, AI, and real-world systems.
+I'm an **Engineering student at UBC** (Integrated Engineering, computer + finance) working on **quantitative research**, full-stack systems and AI.
 
-I co-founded [Current at UBC](https://currentatubc.com), ship full-stack apps, train ML models, and use Claude Code daily as part of my workflow. Starting May 5 at **Vancity**, where I'll be building AI-powered automations across Corporate Real Estate operations through August 2026.
+Right now I'm building [**Implied Odds**](https://github.com/tavelarocque/implied-odds-research), a live research system that tests whether prediction markets price events as well as the options market does, with every test written down before the data that decides it exists. I also co-founded [Current at UBC](https://currentatubc.com), ship full-stack apps, and use Claude Code daily as part of my workflow.
 
 ---
 
@@ -29,6 +29,12 @@ I co-founded [Current at UBC](https://currentatubc.com), ship full-stack apps, t
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
 ![Computer Vision](https://img.shields.io/badge/Computer_Vision-5C3EE8?style=flat)
 
+**Quant**
+![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat&logo=scipy&logoColor=white)
+![Options Pricing](https://img.shields.io/badge/Options_Pricing-1B3A6B?style=flat)
+![Statistical Testing](https://img.shields.io/badge/Statistical_Testing-2E7D32?style=flat)
+![Prediction Markets](https://img.shields.io/badge/Prediction_Markets-6A1B9A?style=flat)
+
 **Frontend**
 ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
@@ -47,6 +53,7 @@ I co-founded [Current at UBC](https://currentatubc.com), ship full-stack apps, t
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
 ![Render](https://img.shields.io/badge/Render-46E3B7?style=flat&logo=render&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
 
 **Engineering & Hardware**
 ![Arduino](https://img.shields.io/badge/Arduino-00979D?style=flat&logo=Arduino&logoColor=white)
@@ -62,8 +69,15 @@ I co-founded [Current at UBC](https://currentatubc.com), ship full-stack apps, t
 
 ## 🚀 Featured Projects
 
+### 📊 [Implied Odds — Prediction Markets vs. Options](https://github.com/tavelarocque/implied-odds-research)
+Live research system comparing Kalshi's S&P 500, Nasdaq-100 and Bitcoin contracts with the probabilities implied by option prices (Breeden–Litzenberger on arbitrage-checked SVI smiles; Deribit for Bitcoin). A cloud pipeline on GitHub Actions collects Cboe, Kalshi, Polymarket and Deribit data around the clock, paper-trades the gap under fixed rules, and re-reads the order book after every trade to check it would really have filled. Every test is **pre-registered** before its data exists, judged on a locked holdout, and adjusted in a **multiple-testing ledger** (Holm / BHY). Results so far: Kalshi's S&P contracts are well calibrated, and a Kalshi + realized-volatility blend beat Kalshi's own price on the sealed holdout.
+`Python` `NumPy` `pandas` `SciPy` `Options Pricing` `Bootstrap / Multiple Testing` `GitHub Actions`
+[GitHub](https://github.com/tavelarocque/implied-odds-research)
+
+---
+
 ### 🌐 [Current at UBC — Student Events Platform](https://currentatubc.com)
-Co-founded student-to-industry events platform launching October 22, 2026 with **350+ students**, **3 keynote speakers**, and **50 Vancouver industry leaders**. Net proceeds to BC Children's Hospital Foundation. Built the entire production stack: React frontend on Netlify, Zapier automation pipelines wiring form submissions through Google Sheets into Slack alerts and a custom CRM, Cloudflare DNS and email.
+Co-founded student-to-industry event launching January 2027 with **300+ students**, **3 keynote speakers**, and **50 Vancouver industry leaders**. Net proceeds to BC Children's Hospital Foundation. Built the entire production stack: React frontend on Netlify, Zapier automation pipelines wiring form submissions through Google Sheets into Slack alerts and a custom CRM, Cloudflare DNS and email.
 `React` `Netlify` `Zapier` `Cloudflare` `Custom CRM`
 [Live Site](https://currentatubc.com)
 
@@ -99,8 +113,9 @@ Browser-based physics simulation with real-time particle collision using game lo
 
 ## 🎓 About Me
 
-- 💼 **Co-Founder & CEO** @ [Current at UBC](https://currentatubc.com), the student-to-industry events platform launching October 22, 2026 with 350+ students, 50 industry leaders, and BC Children's Hospital Foundation
-- 🏦 **Incoming Indigenous Project Assistant Intern** @ Vancity, building AI automations for Corporate Real Estate (May–Aug 2026)
+- 📊 Building [**Implied Odds**](https://github.com/tavelarocque/implied-odds-research), a pre-registered quant research system on prediction markets and options
+- 💼 **Co-Founder & CEO** @ [Current at UBC](https://currentatubc.com), the student-to-industry event launching January 2027 with 300+ students, 50 industry leaders, and all net proceeds to BC Children's Hospital Foundation
+- 🏦 **Indigenous Project Assistant Intern** @ Vancity, AI automations for Corporate Real Estate (May–Aug 2026)
 - 📐 Engineering student @ **University of British Columbia** (BASc, expected 2029)
 - 📋 **Lead External Recruitment Chair** @ KS Society. Screened hundreds of applications across full hiring cycles, promoted from Recruiter in 4 months
 - 🛠️ Built microcontroller systems, CAD-designed 3D-printed devices, and a full rainwater harvesting system
@@ -116,6 +131,4 @@ Browser-based physics simulation with real-time particle collision using game lo
 
 ---
 
-*🟢 Open to Fall 2026 / Winter 2027 co-op & internship opportunities in Vancouver, BC (or remote)*
-
-*🟢 Open to Summer 2026 co-op & internship opportunities in Vancouver, BC (or remote)*
+*🟢 Open to quantitative research and software roles: Summer 2027 internships and full-time opportunities, in Vancouver, BC or remote*
