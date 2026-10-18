@@ -126,7 +126,7 @@ Browser-based physics simulation with real-time particle collision using game lo
 - 🐫 Building [**ocaml-contracts**](https://github.com/tavelarocque/ocaml-contracts), a contract language in OCaml for pricing and making markets in Kalshi's Bitcoin contracts
 - 💼 **Co-Founder & CEO** @ [Current at UBC](https://currentatubc.com), the student-to-industry event launching January 2027 with 300+ students, 50 industry leaders, and all net proceeds to BC Children's Hospital Foundation
 - 🏦 **Indigenous Project Assistant Intern** @ Vancity, AI automations for Corporate Real Estate (May–Aug 2026)
-- 📐 Engineering student @ **University of British Columbia** (BASc, expected 2029)
+- 📐 Engineering student @ **University of British Columbia** (BASc, expected 2028)
 - 📋 **Lead External Recruitment Chair** @ KS Society. Screened hundreds of applications across full hiring cycles, promoted from Recruiter in 4 months
 - 🛠️ Built microcontroller systems, CAD-designed 3D-printed devices, and a full rainwater harvesting system
 - 🏔️ Former ski patrol volunteer
