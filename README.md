@@ -113,6 +113,13 @@ A financial contract language in OCaml, after Peyton Jones, Eber and Seward's *C
 
 ---
 
+### 💪 [MODUX — Training App for Hybrid Athletes](https://modux.ca)
+A native iOS app for athletes who both lift and run, built solo end to end in 10 days and in App Store review. Its **Interference Score** models how strength and endurance training conflict: an **11-dimensional fatigue vector with 72-hour decay**, shown as a 0–100 readiness score (ACWR-based, with confidence scoring), with TRIMP-based training stress split between lifting and running load. It also has a per-muscle recovery map and syncs with Strava and Apple HealthKit, matching workouts across the two by fuzzy matching so none is counted twice, with a unique partial index enforcing it in the database.
+`React Native` `Expo` `TypeScript` `Supabase Postgres` `Row Level Security` `Deno Edge Functions` `Strava API` `HealthKit`
+[Website](https://modux.ca)
+
+---
+
 ### 🌐 [Current at UBC — Student Events Platform](https://currentatubc.com)
 Co-founded student-to-industry event launching January 2027 with **300+ students**, **3 keynote speakers**, and **50 Vancouver industry leaders**. Net proceeds to BC Children's Hospital Foundation. Built the entire production stack: React frontend on Netlify, Zapier automation pipelines wiring form submissions through Google Sheets into Slack alerts and a custom CRM, Cloudflare DNS and email.
 `React` `Netlify` `Zapier` `Cloudflare` `Custom CRM`
@@ -153,9 +160,10 @@ Browser-based physics simulation with real-time particle collision using game lo
 - 📊 Building [**Implied Odds**](https://github.com/tavelarocque/implied-odds-research), a pre-registered quant research system on prediction markets and options
 - 🐫 Building [**ocaml-contracts**](https://github.com/tavelarocque/ocaml-contracts), a contract language in OCaml for pricing and making markets in Kalshi's Bitcoin contracts
 - 💼 **Co-Founder & CEO** @ [Current at UBC](https://currentatubc.com), the student-to-industry event launching January 2027 with 300+ students, 50 industry leaders, and all net proceeds to BC Children's Hospital Foundation
+- 📱 **Co-Founder & Lead Engineer** @ [MODUX](https://modux.ca), a native iOS training app for hybrid athletes (in App Store review)
 - 🏦 **Indigenous Project Assistant Intern** @ Vancity, AI automations for Corporate Real Estate (May–Aug 2026)
 - 📐 Engineering student @ **University of British Columbia** (BASc, expected 2028)
-- 📋 **Lead External Recruitment Chair** @ KS Society. Screened hundreds of applications across full hiring cycles, promoted from Recruiter in 4 months
+- 📋 **Director of Philanthropy** @ KS Society, promoted after leading External Recruitment (screened hundreds of applications across full hiring cycles; promoted from Recruiter in 4 months). Own philanthropic strategy, partner outreach and event programming
 - 🛠️ Built microcontroller systems, CAD-designed 3D-printed devices, and a full rainwater harvesting system
 - 🏔️ Former ski patrol volunteer
 - 💪 Certified Weight Lifting Trainer and varsity athlete
