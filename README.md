@@ -2,13 +2,14 @@
 
 I'm an **Engineering student at UBC** (Integrated Engineering, computer + finance) working on **quantitative research**, full-stack systems and AI.
 
-Right now I'm building [**Implied Odds**](https://github.com/tavelarocque/implied-odds-research), a live research system that tests whether prediction markets price events as well as the options market does, with every test written down before the data that decides it exists. I also co-founded [Current at UBC](https://currentatubc.com), ship full-stack apps, and use Claude Code daily as part of my workflow.
+Right now I'm building [**Implied Odds**](https://github.com/tavelarocque/implied-odds-research), a live research system that tests whether prediction markets price events as well as the options market does, with every test written down before the data that decides it exists, and [**ocaml-contracts**](https://github.com/tavelarocque/ocaml-contracts), a contract language in OCaml that prices Kalshi's Bitcoin markets from those option-implied distributions and makes markets in them in simulation. I also co-founded [Current at UBC](https://currentatubc.com), ship full-stack apps, and use Claude Code daily as part of my workflow.
 
 ---
 
 ## 🛠️ What I Build With
 
 **Languages**
+![OCaml](https://img.shields.io/badge/OCaml-EC6813?style=flat&logo=ocaml&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
@@ -34,6 +35,7 @@ Right now I'm building [**Implied Odds**](https://github.com/tavelarocque/implie
 ![Options Pricing](https://img.shields.io/badge/Options_Pricing-1B3A6B?style=flat)
 ![Statistical Testing](https://img.shields.io/badge/Statistical_Testing-2E7D32?style=flat)
 ![Prediction Markets](https://img.shields.io/badge/Prediction_Markets-6A1B9A?style=flat)
+![Market Making](https://img.shields.io/badge/Market_Making-00695C?style=flat)
 
 **Frontend**
 ![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
@@ -76,6 +78,13 @@ Live research system comparing Kalshi's S&P 500, Nasdaq-100 and Bitcoin contract
 
 ---
 
+### 🐫 [ocaml-contracts — A Contract Language for Prediction Markets](https://github.com/tavelarocque/ocaml-contracts)
+A financial contract language in OCaml, after Peyton Jones, Eber and Seward's *Composing contracts*, that prices Kalshi's Bitcoin contracts from the probability distributions implied by Deribit options. Every contract is a tree of nine combinators, valued by **three independent pricers** that check each other (density integration, Carr–Madan static replication, a Rubinstein implied tree); they match Implied Odds' Python probabilities to **2.7 × 10⁻¹²** across 13,804 contracts. On top: bump-and-reprice Greeks, delta-hedging simulation, an **Avellaneda–Stoikov market maker** adapted to $0/$1 payouts, and a **markout system** for measuring how informed order flow is, all under 80 expect and property tests.
+`OCaml` `Core` `dune` `Options Pricing` `Market Making` `Property Testing`
+[GitHub](https://github.com/tavelarocque/ocaml-contracts)
+
+---
+
 ### 🌐 [Current at UBC — Student Events Platform](https://currentatubc.com)
 Co-founded student-to-industry event launching January 2027 with **300+ students**, **3 keynote speakers**, and **50 Vancouver industry leaders**. Net proceeds to BC Children's Hospital Foundation. Built the entire production stack: React frontend on Netlify, Zapier automation pipelines wiring form submissions through Google Sheets into Slack alerts and a custom CRM, Cloudflare DNS and email.
 `React` `Netlify` `Zapier` `Cloudflare` `Custom CRM`
@@ -114,6 +123,7 @@ Browser-based physics simulation with real-time particle collision using game lo
 ## 🎓 About Me
 
 - 📊 Building [**Implied Odds**](https://github.com/tavelarocque/implied-odds-research), a pre-registered quant research system on prediction markets and options
+- 🐫 Building [**ocaml-contracts**](https://github.com/tavelarocque/ocaml-contracts), a contract language in OCaml for pricing and making markets in Kalshi's Bitcoin contracts
 - 💼 **Co-Founder & CEO** @ [Current at UBC](https://currentatubc.com), the student-to-industry event launching January 2027 with 300+ students, 50 industry leaders, and all net proceeds to BC Children's Hospital Foundation
 - 🏦 **Indigenous Project Assistant Intern** @ Vancity, AI automations for Corporate Real Estate (May–Aug 2026)
 - 📐 Engineering student @ **University of British Columbia** (BASc, expected 2029)
