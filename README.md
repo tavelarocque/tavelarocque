@@ -2,7 +2,7 @@
 
 I'm an **Engineering student at UBC** (Integrated Engineering, computer + finance) working on **quantitative research**, full-stack systems and AI.
 
-Right now I'm building [**Implied Odds**](https://github.com/tavelarocque/implied-odds-research), a live research system that tests whether prediction markets price events as well as the options market does, with every test written down before the data that decides it exists, and [**ocaml-contracts**](https://github.com/tavelarocque/ocaml-contracts), a contract language in OCaml that prices Kalshi's Bitcoin markets from those option-implied distributions and makes markets in them in simulation. I also co-founded [Current at UBC](https://currentatubc.com), ship full-stack apps, and use Claude Code daily as part of my workflow.
+Right now I'm building [**Implied Odds**](https://github.com/tavelarocque/implied-odds-research), a live research system that tests whether prediction markets price events as well as the options market does, with every test written down before the data that decides it exists, and [**ocaml-contracts**](https://github.com/tavelarocque/ocaml-contracts), a contract language in OCaml that prices Kalshi's Bitcoin markets from those option-implied distributions and makes markets in them in simulation. I also built [**holdem-cfr**](https://github.com/tavelarocque/holdem-cfr), a game-theory solver for heads-up no-limit hold'em in Rust whose trained bot you can [play in the browser](https://tavelarocque.github.io/holdem-cfr/web/table/). I also co-founded [Current at UBC](https://currentatubc.com), ship full-stack apps, and use Claude Code daily as part of my workflow.
 
 ---
 
@@ -10,6 +10,7 @@ Right now I'm building [**Implied Odds**](https://github.com/tavelarocque/implie
 
 **Languages**
 ![OCaml](https://img.shields.io/badge/OCaml-EC6813?style=flat&logo=ocaml&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
@@ -25,14 +26,22 @@ Right now I'm building [**Implied Odds**](https://github.com/tavelarocque/implie
 ![ppx_expect](https://img.shields.io/badge/ppx__expect-5C4033?style=flat)
 ![Quickcheck](https://img.shields.io/badge/Quickcheck-2E7D32?style=flat)
 
+**Rust**
+![Cargo](https://img.shields.io/badge/Cargo-000000?style=flat&logo=rust&logoColor=white)
+![rayon](https://img.shields.io/badge/rayon_(parallelism)-B7410E?style=flat)
+![proptest](https://img.shields.io/badge/proptest-2E7D32?style=flat)
+![criterion](https://img.shields.io/badge/criterion_(benchmarks)-5C4033?style=flat)
+
 **Quant**
 ![Options Pricing](https://img.shields.io/badge/Options_Pricing-1B3A6B?style=flat)
 ![Market Making](https://img.shields.io/badge/Market_Making-00695C?style=flat)
 ![Prediction Markets](https://img.shields.io/badge/Prediction_Markets-6A1B9A?style=flat)
 ![Statistical Testing](https://img.shields.io/badge/Statistical_Testing-2E7D32?style=flat)
+![Game Theory](https://img.shields.io/badge/Game_Theory-0D5C4E?style=flat)
 ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat&logo=scipy&logoColor=white)
 
 - **Quantitative methods:** SVI volatility smiles · Breeden–Litzenberger densities · Carr–Madan static replication · implied binomial trees · Black-76 · Greeks under sticky strike and sticky moneyness · Avellaneda–Stoikov market making · markouts and order-flow toxicity
+- **Game theory:** counterfactual regret minimization (CFR, CFR+, Linear and Discounted CFR, Monte Carlo CFR) · exact best response · local best response · card and action abstraction
 - **Research discipline:** pre-registration · locked holdouts · CSCV · deflated Sharpe · Holm / BHY multiple-testing corrections · bootstrap inference · property-based and known-answer testing
 - **Math:** Calculus I–III · Linear Algebra · probability and statistics
 
@@ -113,6 +122,13 @@ A financial contract language in OCaml, after Peyton Jones, Eber and Seward's *C
 
 ---
 
+### ♠️ [holdem-cfr — Game-Theory Solver for No-Limit Hold'em](https://github.com/tavelarocque/holdem-cfr)
+A counterfactual regret minimization solver for heads-up no-limit Texas hold'em, built from scratch in Rust: the same pieces as Libratus and Pluribus at laptop scale. A CFR engine verified against exact best responses (**4.9 × 10⁻⁶** exploitability on Leduc hold'em), a 7-card evaluator checked on all **133.8M** hands, a multithreaded range-vs-range postflop solver that solves a 293,000-node flop tree to 0.33% of pot in **31 s**, and an abstracted strategy trained for **1.5 billion** Monte Carlo CFR iterations. Strategy quality is measured with duplicate matches and **local best response**, which showed where the remaining exploitability comes from. The trained bot runs in the browser, with its card abstraction recomputed in JavaScript bit-identically to Rust.
+`Rust` `rayon` `proptest` `Game Theory` `Monte Carlo CFR` `JavaScript`
+[Project page](https://tavelarocque.github.io/holdem-cfr/) · [Play the bot](https://tavelarocque.github.io/holdem-cfr/web/table/) · [GitHub](https://github.com/tavelarocque/holdem-cfr)
+
+---
+
 ### 💪 [MODUX — Training App for Hybrid Athletes](https://modux.ca)
 A native iOS app for athletes who both lift and run, built solo end to end in 10 days and in App Store review. Its **Interference Score** models how strength and endurance training conflict: an **11-dimensional fatigue vector with 72-hour decay**, shown as a 0–100 readiness score (ACWR-based, with confidence scoring), with TRIMP-based training stress split between lifting and running load. It also has a per-muscle recovery map and syncs with Strava and Apple HealthKit, matching workouts across the two by fuzzy matching so none is counted twice, with a unique partial index enforcing it in the database.
 `React Native` `Expo` `TypeScript` `Supabase Postgres` `Row Level Security` `Deno Edge Functions` `Strava API` `HealthKit`
@@ -159,6 +175,7 @@ Browser-based physics simulation with real-time particle collision using game lo
 
 - 📊 Building [**Implied Odds**](https://github.com/tavelarocque/implied-odds-research), a pre-registered quant research system on prediction markets and options
 - 🐫 Building [**ocaml-contracts**](https://github.com/tavelarocque/ocaml-contracts), a contract language in OCaml for pricing and making markets in Kalshi's Bitcoin contracts
+- ♠️ Built [**holdem-cfr**](https://github.com/tavelarocque/holdem-cfr), a CFR solver for heads-up no-limit hold'em in Rust, with a trained bot you can [play in the browser](https://tavelarocque.github.io/holdem-cfr/web/table/)
 - 💼 **Co-Founder & CEO** @ [Current at UBC](https://currentatubc.com), the student-to-industry event launching January 2027 with 300+ students, 50 industry leaders, and all net proceeds to BC Children's Hospital Foundation
 - 📱 **Co-Founder & Lead Engineer** @ [MODUX](https://modux.ca), a native iOS training app for hybrid athletes (in App Store review)
 - 🏦 **Indigenous Project Assistant Intern** @ Vancity, AI automations for Corporate Real Estate (May–Aug 2026)
