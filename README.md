@@ -2,7 +2,7 @@
 
 I'm an **Engineering student at UBC** (Integrated Engineering, computer + finance) working on **quantitative research**, full-stack systems and AI.
 
-Right now I'm building [**Implied Odds**](https://github.com/tavelarocque/implied-odds-research), a live research system that tests whether prediction markets price events as well as the options market does, with every test written down before the data that decides it exists, and [**ocaml-contracts**](https://github.com/tavelarocque/ocaml-contracts), a contract language in OCaml that prices Kalshi's Bitcoin markets from those option-implied distributions and makes markets in them in simulation. I also built [**holdem-cfr**](https://github.com/tavelarocque/holdem-cfr), a game-theory solver for heads-up no-limit hold'em in Rust whose trained bot you can [play in the browser](https://tavelarocque.github.io/holdem-cfr/web/table/). I also co-founded [Current at UBC](https://currentatubc.com), ship full-stack apps, and use Claude Code daily as part of my workflow.
+Right now I'm building [**Implied Odds**](https://github.com/tavelarocque/implied-odds-research), a live research system that tests whether prediction markets price events as well as the options market does, with every test written down before the data that decides it exists, and [**ocaml-contracts**](https://github.com/tavelarocque/ocaml-contracts), a contract language in OCaml that prices Kalshi's Bitcoin markets from those option-implied distributions and makes markets in them in simulation. I also built [**itchbook**](https://github.com/tavelarocque/itchbook), a C++20 engine that rebuilds NASDAQ's full order book from raw exchange data and uses it to test how backtests model queue position and whether deep order-book models can trade after costs, and [**holdem-cfr**](https://github.com/tavelarocque/holdem-cfr), a game-theory solver for heads-up no-limit hold'em in Rust whose trained bot you can [play in the browser](https://tavelarocque.github.io/holdem-cfr/web/table/). I also co-founded [Current at UBC](https://currentatubc.com), ship full-stack apps, and use Claude Code daily as part of my workflow.
 
 ---
 
@@ -10,6 +10,7 @@ Right now I'm building [**Implied Odds**](https://github.com/tavelarocque/implie
 
 **Languages**
 ![OCaml](https://img.shields.io/badge/OCaml-EC6813?style=flat&logo=ocaml&logoColor=white)
+![C++](https://img.shields.io/badge/C%2B%2B20-00599C?style=flat&logo=cplusplus&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4169E1?style=flat&logo=postgresql&logoColor=white)
@@ -26,6 +27,14 @@ Right now I'm building [**Implied Odds**](https://github.com/tavelarocque/implie
 ![ppx_expect](https://img.shields.io/badge/ppx__expect-5C4033?style=flat)
 ![Quickcheck](https://img.shields.io/badge/Quickcheck-2E7D32?style=flat)
 
+**C++**
+
+![CMake](https://img.shields.io/badge/CMake-064F8C?style=flat&logo=cmake&logoColor=white)
+![GoogleTest](https://img.shields.io/badge/GoogleTest-4285F4?style=flat)
+![RapidCheck](https://img.shields.io/badge/RapidCheck_(property_tests)-2E7D32?style=flat)
+![libFuzzer](https://img.shields.io/badge/libFuzzer-5C4033?style=flat)
+![Sanitizers](https://img.shields.io/badge/ASan_/_UBSan_/_TSan-B7410E?style=flat)
+
 **Rust**
 ![Cargo](https://img.shields.io/badge/Cargo-000000?style=flat&logo=rust&logoColor=white)
 ![rayon](https://img.shields.io/badge/rayon_(parallelism)-B7410E?style=flat)
@@ -38,9 +47,11 @@ Right now I'm building [**Implied Odds**](https://github.com/tavelarocque/implie
 ![Prediction Markets](https://img.shields.io/badge/Prediction_Markets-6A1B9A?style=flat)
 ![Statistical Testing](https://img.shields.io/badge/Statistical_Testing-2E7D32?style=flat)
 ![Game Theory](https://img.shields.io/badge/Game_Theory-0D5C4E?style=flat)
+![Market Microstructure](https://img.shields.io/badge/Market_Microstructure-37474F?style=flat)
 ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat&logo=scipy&logoColor=white)
 
 - **Quantitative methods:** SVI volatility smiles · Breeden–Litzenberger densities · Carr–Madan static replication · implied binomial trees · Black-76 · Greeks under sticky strike and sticky moneyness · Avellaneda–Stoikov market making · markouts and order-flow toxicity
+- **Market microstructure:** L3 order book reconstruction from NASDAQ TotalView-ITCH · queue-position models · multi-level order-flow imbalance (OFI) · DeepLOB · cost-aware evaluation against spread and fees
 - **Game theory:** counterfactual regret minimization (CFR, CFR+, Linear and Discounted CFR, Monte Carlo CFR) · exact best response · local best response · card and action abstraction
 - **Research discipline:** pre-registration · locked holdouts · CSCV · deflated Sharpe · Holm / BHY multiple-testing corrections · bootstrap inference · property-based and known-answer testing
 - **Math:** Calculus I–III · Linear Algebra · probability and statistics
@@ -49,6 +60,7 @@ Right now I'm building [**Implied Odds**](https://github.com/tavelarocque/implie
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikit-learn&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-D00000?style=flat&logo=keras&logoColor=white)
 ![matplotlib](https://img.shields.io/badge/matplotlib-11557C?style=flat)
@@ -107,6 +119,16 @@ Right now I'm building [**Implied Odds**](https://github.com/tavelarocque/implie
 ---
 
 ## 🚀 Featured Projects
+
+### ⚡ [itchbook — NASDAQ Order Book Engine in C++20](https://github.com/tavelarocque/itchbook)
+
+A C++20 engine that rebuilds NASDAQ's full order-by-order (L3) limit order book from raw TotalView-ITCH 5.0 data, 423 million messages per day, at **92 ns per message**: **3.3× faster** than CppTrader's L3 book on the same machine, with output **byte-identical** to an independent Python reference. Every layer is checked against an independent implementation, with property tests against brute-force models, fuzzing under ASan/UBSan, and mutation-tested cross-checks. The rebuilt book is then the ground truth for two studies. **Queue position:** across **7.5M orders**, 85% of cancelled volume comes from behind an order, so the L2 queue models backtests use (including hftbacktest's) overfill: behind 10–24 orders, 1 in 6 of the uniform model's simulated fills never happened. **Forecasting:** on 7 out-of-time NASDAQ days, DeepLOB beats a multi-level order-flow-imbalance baseline (macro-F1 **0.53 vs 0.45** at 5 s), but no model survives the spread and fees: 0.1–0.4 ticks of edge against at least 1.6 ticks of cost.
+
+`C++20` `CMake` `GoogleTest` `RapidCheck` `libFuzzer` `Python` `PyTorch` `Market Microstructure` `Order Books`
+
+[GitHub](https://github.com/tavelarocque/itchbook) · [Walkthroughs (PDF)](https://github.com/tavelarocque/itchbook/tree/main/docs)
+
+---
 
 ### 📊 [Implied Odds — Prediction Markets vs. Options](https://github.com/tavelarocque/implied-odds-research)
 Live research system comparing Kalshi's S&P 500, Nasdaq-100 and Bitcoin contracts with the probabilities implied by option prices (Breeden–Litzenberger on arbitrage-checked SVI smiles; Deribit for Bitcoin). A cloud pipeline on GitHub Actions collects Cboe, Kalshi, Polymarket and Deribit data around the clock, paper-trades the gap under fixed rules, and re-reads the order book after every trade to check it would really have filled. Every test is **pre-registered** before its data exists, judged on a locked holdout, and adjusted in a **multiple-testing ledger** (Holm / BHY). Results so far: Kalshi's S&P contracts are well calibrated, and a Kalshi + realized-volatility blend beat Kalshi's own price on the sealed holdout.
@@ -176,6 +198,7 @@ Browser-based physics simulation with real-time particle collision using game lo
 - 📊 Building [**Implied Odds**](https://github.com/tavelarocque/implied-odds-research), a pre-registered quant research system on prediction markets and options
 - 🐫 Building [**ocaml-contracts**](https://github.com/tavelarocque/ocaml-contracts), a contract language in OCaml for pricing and making markets in Kalshi's Bitcoin contracts
 - ♠️ Built [**holdem-cfr**](https://github.com/tavelarocque/holdem-cfr), a CFR solver for heads-up no-limit hold'em in Rust, with a trained bot you can [play in the browser](https://tavelarocque.github.io/holdem-cfr/web/table/)
+- ⚡ Built [**itchbook**](https://github.com/tavelarocque/itchbook), a C++20 engine that rebuilds NASDAQ's full L3 order book at 92 ns/message (3.3× faster than CppTrader), used to study queue-position models and deep order-book forecasting
 - 💼 **Co-Founder & CEO** @ [Current at UBC](https://currentatubc.com), the student-to-industry event launching January 2027 with 300+ students, 50 industry leaders, and all net proceeds to BC Children's Hospital Foundation
 - 📱 **Co-Founder & Lead Engineer** @ [MODUX](https://modux.ca), a native iOS training app for hybrid athletes (in App Store review)
 - 🏦 **Indigenous Project Assistant Intern** @ Vancity, AI automations for Corporate Real Estate (May–Aug 2026)
