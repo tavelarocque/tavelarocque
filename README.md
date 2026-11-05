@@ -2,6 +2,8 @@
 
 I'm an **Engineering student at UBC** (Integrated Engineering, computer + finance) working on **quantitative research** and **AI evaluation**.
 
+🌐 **[tavelarocque.com](https://tavelarocque.com)**: research, builds and resume
+
 What ties my work together is that the results can be checked. Hypotheses are written down and registered before the data that decides them is touched. Every important number is computed twice, by implementations written independently. Planted bugs prove the tests can fail. Final runs reproduce bit for bit, and on the chip, the hardware is formally proven equal to a separate spec.
 
 Right now that means a [pre-registered test of order-driven volatility](https://github.com/tavelarocque/itchbook#research-3-a-pre-registered-test-of-order-driven-volatility) on NASDAQ order-book data, a [protocol emulator chip](https://github.com/tavelarocque/protocol-emulator) for Jane Street's ASIC competition, and [exact computations](https://github.com/tavelarocque/spr-calibration-code) on an open problem in online calibration.
@@ -33,14 +35,18 @@ A C++20 engine that rebuilds NASDAQ's full order-by-order (L3) book from raw Tot
 
 **Method:**
 - The plan was pre-registered before the first model call.
-- **515 Qwen3.5-9B episodes** were generated and re-scored under 4 extraction rules × 2 exit rules.
-- Every run used a locked-down sandbox: no network, read-only filesystem.
+- **714 episodes across two models (Qwen and Gemini)** were generated and re-scored under 4 extraction rules × 2 exit settings.
+- Every run used an isolated, locked-down sandbox.
 - Nothing was reported until three gates passed:
-  - a fixture suite;
+  - a fixture suite published before any model call;
   - 22 planted known-answer cases;
-  - replay matching Inspect's own scores on 509 of 512 episodes.
+  - replay matching the benchmark's own logged scores on 711 of 714 episodes.
 
-**Result:** the loophole is real in principle but absent in practice for this model. 0 replies used the pattern, and the rules differ by −0.5 points (95% CI [−1.5, 0.0]).
+**Results:**
+- The headline is a null: the extraction rule barely moves the final cheating rate.
+- But the benchmark's rule shows the model a **SyntaxError instead of its test results** on 20.7% of Qwen attempts and 19.7% of Gemini attempts. The reverse case occurred 0 times in either model.
+- Requiring the test function to finish, rather than accepting a zero exit code, cuts Gemini's measured cheating rate from **59.2% to 19.4%**: 71 of 123 passes called `sys.exit` before the tests ran.
+- Stated limit: Gemini covers 199 of 206 planned episodes, and the 7 missing ones are not a random sample.
 
 `Python` `Inspect` `Docker` `LLM Evaluation` `Pre-registration` `McNemar`
 
@@ -50,12 +56,14 @@ A C++20 engine that rebuilds NASDAQ's full order-by-order (L3) book from raw Tot
 
 ### 🔌 [protocol-emulator: a programmable protocol chip](https://github.com/tavelarocque/protocol-emulator)
 
-An ASIC for [Jane Street's protocol emulator competition](https://blog.janestreet.com/protocol-emulator-asic-competition/), written in **Hardcaml** and being taped out through Tiny Tapeout on IHP 130nm. It's a tiny two-thread CPU modelled on the RP2040's PIO: its instructions read pins, write pins and count cycles, so UART, SPI and I2C live in firmware loaded after fabrication.
+An ASIC for [Jane Street's protocol emulator competition](https://blog.janestreet.com/protocol-emulator-asic-competition/), written in **Hardcaml** and designed for tapeout through Tiny Tapeout on IHP 130nm. It's a tiny two-thread CPU modelled on the RP2040's PIO: its instructions read pins, write pins and count cycles, so UART, SPI and I2C live in firmware loaded after fabrication.
 
 - It runs all three protocols, two at a time, including an I2C-to-SPI bridge with no host in the data path.
 - It can also act as the I2C target or SPI device for outside controllers.
+- JTAG, an Arm SWD probe and a low-speed USB host were added as firmware after the hardware was frozen, with no hardware change.
 - Its firmware runs on the post-layout gate-level netlist.
 - The whole chip, pins to pins, is **formally proven equivalent** to an independently written spec, with a SAT proof in Hardcaml_verify and Z3. Bugs planted in the spec break the proof, so the proof isn't vacuous.
+- 58 planted bugs, kept as code across every layer, are all caught.
 
 `OCaml` `Hardcaml` `Z3` `cocotb` `Tiny Tapeout` `IHP 130nm`
 
@@ -182,6 +190,7 @@ Independent research on the optimal rate of sequential calibration error, an ope
 ## 📫 Let's Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat)](https://linkedin.com/in/tave-la-rocque-56967a329)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:tave2000@icloud.com)
+[![Website](https://img.shields.io/badge/Website-tavelarocque.com-222222?style=flat)](https://tavelarocque.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat&logo=gmail&logoColor=white)](mailto:tave@tavelarocque.com)
 
 *🟢 Open to quantitative research, AI evaluation and software roles: Summer 2027 internships and full-time opportunities, in Vancouver, BC or remote.*
